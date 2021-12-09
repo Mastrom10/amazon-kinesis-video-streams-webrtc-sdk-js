@@ -207,12 +207,23 @@ export class SigV4RequestSigner implements RequestSigner {
         return bufView;
     }
 
+    
     private static toHex(buffer: ArrayBuffer): string {
+        let pad = function (str: string, size: number, replace:string): string {
+            while (str.length < size) {
+                str = replace + str;
+            }
+            return str;
+            
+        };
         return Array.from(new Uint8Array(buffer))
             .map(
                 function (b) {
                     let c = b.toString(16);
-                    let d = c.padStart(2, '0');
+
+                   
+
+                    let d = pad(c, 2, '0');
 
                     return d;
                   }
