@@ -13,6 +13,8 @@ module.exports = merge.smart(require('./webpack.config'), {
         contentBase: path.join(__dirname, 'examples'),
         publicPath: '/',
         port: 3001,
+        host: '0.0.0.0',
+        disableHostCheck: true
     },
 
     // Include sourcemaps

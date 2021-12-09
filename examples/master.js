@@ -87,7 +87,7 @@ async function startMaster(localView, remoteView, formValues, onStatsReport, onR
                 urls: iceServer.Uris,
                 username: iceServer.Username,
                 credential: iceServer.Password,
-            }),
+            })
         );
     }
     console.log('[MASTER] ICE servers: ', iceServers);
@@ -180,7 +180,7 @@ async function startMaster(localView, remoteView, formValues, onStatsReport, onR
             await peerConnection.createAnswer({
                 offerToReceiveAudio: true,
                 offerToReceiveVideo: true,
-            }),
+            })
         );
 
         // When trickle ICE is enabled, send the answer now and then send ICE candidates as they are generated. Otherwise wait on the ICE candidates.

@@ -42,8 +42,8 @@ function getRandomClientId() {
 
 function getFormValues() {
     return {
-        region: $('#region').val(),
-        channelName: $('#channelName').val(),
+        region: "sa-east-1",
+        channelName: "45b2e3df654b8db299f38bba354814ac179e64f920752de5572fbe18df60f551",
         clientId: $('#clientId').val() || getRandomClientId(),
         sendVideo: $('#sendVideo').is(':checked'),
         sendAudio: $('#sendAudio').is(':checked'),
@@ -53,9 +53,9 @@ function getFormValues() {
         useTrickleICE: $('#useTrickleICE').is(':checked'),
         natTraversalDisabled: $('#natTraversalDisabled').is(':checked'),
         forceTURN: $('#forceTURN').is(':checked'),
-        accessKeyId: $('#accessKeyId').val(),
+        accessKeyId: "AKIASVOV7A4MN5JK3IVD",
         endpoint: $('#endpoint').val() || null,
-        secretAccessKey: $('#secretAccessKey').val(),
+        secretAccessKey: "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",
         sessionToken: $('#sessionToken').val() || null,
     };
 }

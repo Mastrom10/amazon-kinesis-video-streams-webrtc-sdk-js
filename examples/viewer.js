@@ -67,7 +67,7 @@ async function startViewer(localView, remoteView, formValues, onStatsReport, onR
                 urls: iceServer.Uris,
                 username: iceServer.Username,
                 credential: iceServer.Password,
-            }),
+            })
         );
     }
     console.log('[VIEWER] ICE servers: ', iceServers);
@@ -130,7 +130,7 @@ async function startViewer(localView, remoteView, formValues, onStatsReport, onR
             await viewer.peerConnection.createOffer({
                 offerToReceiveAudio: true,
                 offerToReceiveVideo: true,
-            }),
+            })
         );
 
         // When trickle ICE is enabled, send the offer now and then send ICE candidates as they are generated. Otherwise wait on the ICE candidates.
