@@ -43,7 +43,7 @@ function getRandomClientId() {
 function getFormValues() {
     return {
         region: "sa-east-1",
-        channelName: "45b2e3df654b8db299f38bba354814ac179e64f920752de5572fbe18df60f551",
+        channelName: "webrtctest",
         clientId: $('#clientId').val() || getRandomClientId(),
         sendVideo: $('#sendVideo').is(':checked'),
         sendAudio: $('#sendAudio').is(':checked'),
